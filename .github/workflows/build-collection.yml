@@ -20,14 +20,14 @@ jobs:
           echo $COLLECTION_NAMESPACE
           echo $COLLECTION_NAME
           echo $VERSION
-      # Building collection
-      - run: |
-          ansible-galaxy collection build
-      # Upload generated tar file as an artifact
-      - uses: actions/upload-artifact@v2
-        with:
-          name: ${{ env.COLLECTION_NAMESPACE }}-${{ env.COLLECTION_NAME }}-${{ env.VERSION }}-${{ env.CI_SHA_SHORT }}
-          path: |
-            ${{ github.workspace }}/**/*.tar.gz
+      # # Building collection
+      # - run: |
+      #     ansible-galaxy collection build
+      # # Upload generated tar file as an artifact
+      # - uses: actions/upload-artifact@v2
+      #   with:
+      #     name: ${{ env.COLLECTION_NAMESPACE }}-${{ env.COLLECTION_NAME }}-${{ env.VERSION }}-${{ env.CI_SHA_SHORT }}
+      #     path: |
+      #       ${{ github.workspace }}/**/*.tar.gz
   
       
