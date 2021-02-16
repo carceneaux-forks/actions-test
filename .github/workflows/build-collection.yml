@@ -9,16 +9,14 @@ jobs:
       # Sets up your GITHUB_WORKSPACE environment variable
       - uses: actions/checkout@v2
       #- uses: FranzDiebold/github-env-vars-action@v2.1.0
-      # Retrieving variables
-      - name: Retrieving variables from galaxy.yml
-        run: |
+      # Retrieving variables from galaxy.yml
+      - run: |
           ansible --version
           echo "COLLECTION_NAMESPACE=`grep 'namespace:' galaxy.yml | tail -n1 | awk '{ print $2}' | tr -d \"`" >> $GITHUB_ENV
           echo "COLLECTION_NAME=`grep 'name:' galaxy.yml | tail -n1 | awk '{ print $2}' | tr -d \"`" >> $GITHUB_ENV
           echo "VERSION=`grep 'version:' galaxy.yml | tail -n1 | awk '{ print $2}' | tr -d \"`" >> $GITHUB_ENV
       # Printing variables
       - run: |
-          ls
           echo $COLLECTION_NAMESPACE
           echo $COLLECTION_NAME
           echo $VERSION
