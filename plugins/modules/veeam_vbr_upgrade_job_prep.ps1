@@ -63,7 +63,7 @@ switch ( $module.Params.state) {
             # Disabling schedule Backup Jobs
             $jobs = @()
             foreach ($job in Import-Csv $file){
-                $jobs += $job | Disable-VBRJob -Job { $_.Name } | Select-Object Id,Name,@{Name = "Enabled"; Expression = {$false}}
+                $jobs += $job | Disable-VBRJob -Job { $_.Name } | Select-Object Id,Name,@{Name = "Enabled"; Expression = {$false }}
             }
 
             # Saving info to output
@@ -78,7 +78,7 @@ switch ( $module.Params.state) {
         try {
             $jobs = @()
             foreach ($job in Import-Csv $file){
-                $jobs += $job | Enable-VBRJob -Job { $_.Name } | Select-Object Id,Name,@{Name = "Enabled"; Expression = {$true}}
+                $jobs += $job | Enable-VBRJob -Job { $_.Name } | Select-Object Id,Name,@{Name = "Enabled"; Expression = {$true }}
             }
 
             # Saving info to output
