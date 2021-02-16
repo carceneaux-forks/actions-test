@@ -1,0 +1,481 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/veeam_software_check.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b3097caac0295735758f570e18423e8d8b74d2e8c81887096df21e50ce8ff6cd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/veeam_vbr_config_backup.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "09a23d368d473cb01b45fbd218eee86b10df513c9b4e1f1c7c1160bb60d0660a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/veeam_vbr_cloud_connect_maintenance.ps1",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "33faf8511ae943fa9b86b9f1133359ef9197a6bedeac663b308497a82bce118d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/veeam_vbr_upgrade_job_prep.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3f20420257a0002046d1a8a8ade805011666cca2f5216b0c42ca7d7b97329dad",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pending_reboot_check.ps1",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "55c4e5ea0c012bfa07590e06fcdbd846a977c609bc1948686a889ff31d3e4112",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pending_reboot_check.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "546fe548ccf46ddf6cba7a9329b1da62ed0e0c04f0f5dd2834927510c1a863c8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/veeam_vbr_config_backup.ps1",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2d5bbf66a7ed650e696dc2bd2de2a805fa438877aeb264eda4228a4b91235790",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/veeam_vbr_upgrade_job_prep.ps1",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d11ac85b43c570a5ebf6c385116ac5613802858b3a9485c10e8db19d408b437a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/veeam_software_check.ps1",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "47f1021551ad2fa9f1988d5bc01694c1df1868152d5f7bc3ffc230c5419d8cfa",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/veeam_vbr_cloud_connect_maintenance.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "461687ca4a2b4fc39f3c42ae118687534e2cd2d5ae611764405f12d73c2912ab",
+   "format": 1
+  },
+  {
+   "name": "roles",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2a129410f9642b6d58530f7fc15845807b443e70bebea2a4cbb8a20c924b2752",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "192d84d1ca69ca123fb9bcbbfb9eea8a2ec19c919d2ac3ef9bdb079ee869d861",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/em_upgrade.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "42638451d4c0ac0e5fa22d75fd246160543305ad3bab53174f5ea8d58cc578a0",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/one_agent_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8b84b881da1117dde96a73a753c9c74d41d76fec51e2681651497b575063fdfe",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/one_client_upgrade.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bfde6ed1b775e7f06ce485eda4ac6760185c3281b04106342d21b02e51027316",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/one_server_upgrade.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "072ae442c451ae1d86ebc0c1264855562e338029bea0aee5d304f9a92be904db",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/vbr_install_pretasks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3863de9b9162ab18438658e3693b76891daf4e0cde75ed59f64f21e3529115ae",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/em_patch.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c94a822974448ab238f9891b4c8e7ee21d96e4738b58b3c6cec42af49b6f14bb",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/one_web_ui_upgrade.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "27a3cd4c7d23149ac982ffb76b7c96057fd834db519e108a699498b32ccd19f4",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/vbr_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3b4d4bbcde7810d9e6bb1a9e86aced3dfcb459c8dd9fc5f9aa467db93e49640a",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/one_patch.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "573f242185caa3c6ba6938410846733575f38cda40569564216baac98ba5e793",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/one_server_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1672ee3825132dcac339a4a4b85f1bc32007602cdd8ec0dca0cf220b4dad20d7",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/install_net_framework.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7defc3cdf0d1cf1b77feae72cb6aad1e043a370ff87c76f7783d27cbce771015",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/vbr_patch.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d37a2dc7676f27c7b01847d793d79d7c396d8dfda94367379ded31fc8190ecc",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5773ab7fbdd1f0e475b44cf1b2c2e29c1249e3727fc65de763fdc797917d6f9d",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/one_web_ui_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5e75a80d121f38b192144726ce99c2dc00ee7c1cc3e57a40313d9b0b0eb39331",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/em_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "220b13d48fdffd9b126a49e7ed72b7ec5d67eadf3a30b57c237841d1786801bc",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/one_install_pretasks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "954ddc2edaa04c17e799f6ca5783317b3dadaaa0683a687ce5f9f45de77c8210",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/vbr_upgrade.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3dd72da022fcd5babe46399d6452f11fdd7de593c2f6fc193d68f2e79cf30917",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/mount_iso.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fa33e20b209ff0addb47bf118ee9ca7b423e1382de30801702cbbbbb0d23dab8",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/one_agent_upgrade.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4d76bc8760e4ef9a02ff809c912fc3a7598ef607c3f81fc05c425dadde74cd91",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/tasks/one_client_install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "09264813a1777acb2bba0f442d464068bcd33f14800147c56b877057207da15f",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f9d7b60d07c2f5a5b583eb04dd2dd6fcbec097983aac5a31d2dd8a1239dd4dec",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/vars/one_v10.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d8d453c92567e90c65a6bdcfe72865d5b379371c4a3fd45eef6c20205c58268b",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/vars/em_v9.5.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a9026137fd53381e2285d239b5a7e942785c754a4fc674d1f3e4960eda4ac440",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/vars/vbr_v10.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2c5662f5a6b969559c3f045859c693777021b7e4c42e8ca60c1e0607f840af04",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "73bb36b7f7636b738c170b21a8376d64602378583158f747fe32fc76c17d4d24",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/vars/em_v10.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c7fa4cf89260a628ef3a99903b3dc75eaf8c6542769bf1821e7576b8c99f9dbf",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/vars/one_v9.5.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5562c3d7bc6b67828d36e5b9ec2da7eec2700867362b011c5b2a5a28a5409136",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/vars/vbr_v9.5.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f8ef289bd6d529fba3579e0dd8b55571924ea2158a97ead6b2fa6ddcb0785a32",
+   "format": 1
+  },
+  {
+   "name": "roles/veeam_vas/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "38d00494473b61077d8dd64f3d373b714cc041ccb0b647ba3ebf1c16f41cec90",
+   "format": 1
+  },
+  {
+   "name": ".vscode",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".vscode/settings.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cb90ef304a6a295e6f23506b632c3fbde0427363a7087629e920cf71b0830743",
+   "format": 1
+  },
+  {
+   "name": ".gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "348774be6c839e20be8db3a5509ac3ac1534fd7480c34da326d6d86fe2c7757f",
+   "format": 1
+  },
+  {
+   "name": ".travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d23c655ec78efe41ffa2a79e267d8b8a8249d06bd75a8595293936117156dc4b",
+   "format": 1
+  },
+  {
+   "name": "DCO.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "28409fa0102fd1c31b78e14ccbe15c59543773cfbe77652d84719f33e31dfcc8",
+   "format": 1
+  },
+  {
+   "name": ".github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/workflows",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/build-collection.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e9ae1c2183f588cac6bc0dffc6131772ec527f11ff0af54d6e72827c538e115f",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/deploy-collection.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6ff2508db45083dfb51acf66b5cae9d7da6db41db9a055459b21fa71b1ee17ab",
+   "format": 1
+  },
+  {
+   "name": ".github/pull_request_template.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e2cc97a0053da7c9ec858fabdf9e240c99afc2f76358595eca922781e07c218b",
+   "format": 1
+  },
+  {
+   "name": ".github/ISSUE_TEMPLATE",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/ISSUE_TEMPLATE/feature_request.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1f48c52f209a971b8e7eae4120144d28fcf8ee38a7778a7b4d8cf1ab356617d2",
+   "format": 1
+  },
+  {
+   "name": ".github/ISSUE_TEMPLATE/bug_report.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0c8d64f29fb4536513653bf8c97da30f3340e2041b91c8952db1515d6b23a7b3",
+   "format": 1
+  },
+  {
+   "name": "LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+   "format": 1
+  },
+  {
+   "name": "readme_galaxy.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fdcba77556ad6eb38f6d72dd87dee9c9350e878cb3b050074f7b0c830b3781a5",
+   "format": 1
+  },
+  {
+   "name": "CONTRIBUTING.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "990ccf0448910e476a76a161ce9bc827854a0134a1e16b263c2a8d1f5648f4c6",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "25959b2e3ff6627f8e992057eb644e9614ca8b9ac8fdaedf9b893badf040f825",
+   "format": 1
+  }
+ ],
+ "format": 1
+}

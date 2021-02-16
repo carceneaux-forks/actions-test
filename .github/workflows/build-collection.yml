@@ -1,0 +1,21 @@
+name: Build Ansible Collection
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      # Important: This sets up your GITHUB_WORKSPACE environment variable
+      - uses: actions/checkout@v2
+      # Building collection
+      - run: |
+          ansible-galaxy collection build
+      # Upload generated tar file as an artifact
+      - uses: actions/upload-artifact@v2
+        with:
+          name: ${{ env.OUTPUT }}
+          path: |
+            ${{ github.workspace }}/**/*.tar.gz
+  
+      

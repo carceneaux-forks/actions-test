@@ -1,0 +1,28 @@
+---
+galaxy_info:
+  author: Chris Arceneaux
+  description: Administer Veeam Availability Suite (VBR/EM/ONE)
+  company: VeeamHub
+  license: GPL-3.0-only
+  min_ansible_version: 2.9
+  platforms:
+  - name: Windows
+    versions:
+     - 2019
+     - 2016
+  galaxy_tags:
+    - veeam
+    - availability
+    - suite
+    - backup
+    - replication
+    - enterprise
+    - manager
+    - one
+    - server
+    - system
+    - backup
+    - vbr
+    - vem
+    - em
+dependencies: []
