@@ -2,7 +2,7 @@ name: Build & Deploy Ansible Galaxy Collection
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 jobs:
