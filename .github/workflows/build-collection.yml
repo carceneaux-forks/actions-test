@@ -13,4 +13,5 @@ jobs:
           ansible --version
       - run: |
           python3 -m pip install ansible-lint
+          apt install mlocate
           locate ansible-lint
