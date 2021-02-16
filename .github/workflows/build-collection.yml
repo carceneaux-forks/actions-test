@@ -19,7 +19,7 @@ jobs:
           echo $COLLECTION_NAMESPACE
           echo $COLLECTION_NAME
           echo $VERSION
-          echo ${{ env.github.ref }}
+          echo github.ref
       # Building collection
       - run: |
           ansible-galaxy collection build
