@@ -9,7 +9,7 @@
   when:
     - precheck.pending_reboot | bool
 - name: Checking to see if Veeam Backup Enterprise Manager is installed
-  veeamhub.veeam.veeam_software_check:
+  veeam_software_check:
     name: "Veeam Backup Enterprise Manager"
   register: software
 - name: Is Veeam Backup Enterprise Manager installed?
@@ -17,7 +17,7 @@
     msg: "Veeam Backup Enterprise Manager must be installed on this server in order to upgrade it."
   when: not (software.installed | bool)
 - name: Checking to see if Veeam Backup & Replication Server is installed
-  veeamhub.veeam.veeam_software_check:
+  veeam_software_check:
     name: "Veeam Backup & Replication Server"
   register: software
 - name: Is Veeam Backup & Replication Server w/Cloud Connect installed?
@@ -98,7 +98,7 @@
     state: present
     arguments: '/L*v "{{ destination }}logs\\EnterpriseManager.log" VBREM_LICENSE_FILE="{{ destination }}{{ destination_license_file }}"  ACCEPT_THIRDPARTY_LICENSES=1 ACCEPTEULA=YES'
 - name: Checking to see if Veeam Cloud Connect Portal is installed
-  veeamhub.veeam.veeam_software_check:
+  veeam_software_check:
     name: "Veeam Cloud Connect Portal"
   register: software
 - name: Upgrade Veeam Cloud Connect Portal
