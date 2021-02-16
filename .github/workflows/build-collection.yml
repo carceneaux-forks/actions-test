@@ -5,7 +5,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
     steps:
       # Important: This sets up your GITHUB_WORKSPACE environment variable
       - uses: actions/checkout@v2
@@ -20,6 +19,7 @@ jobs:
           echo $COLLECTION_NAMESPACE
           echo $COLLECTION_NAME
           echo $VERSION
+          echo ${{ env.github.ref }}
       # Building collection
       - run: |
           ansible-galaxy collection build
