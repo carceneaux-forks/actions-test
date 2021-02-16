@@ -12,4 +12,5 @@ jobs:
       - run: |
           ansible --version
       - run: |
+          pip install ansible-lint
           ansible-lint --version
