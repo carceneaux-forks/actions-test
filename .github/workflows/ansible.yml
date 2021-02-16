@@ -20,3 +20,4 @@ jobs:
           echo $COLLECTION_NAMESPACE
           echo $COLLECTION_NAME
           echo $VERSION     
+
