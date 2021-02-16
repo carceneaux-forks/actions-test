@@ -6,8 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Setting up GITHUB_WORKSPACE environment variable
-        uses: actions/checkout@v2
+      # Important: This sets up your GITHUB_WORKSPACE environment variable
+      - uses: actions/checkout@v2
       - name: Retrieving variables from galaxy.yml
         run: |
           ansible --version
@@ -19,8 +19,8 @@ jobs:
           echo $COLLECTION_NAMESPACE
           echo $COLLECTION_NAME
           echo $VERSION
-      - name: Building collection
-        run: |
+      # Building collection
+      - run: |
           ansible-galaxy collection build
       # Upload generated tar file as an artifact
       - name: Retrieving additional environment variables
