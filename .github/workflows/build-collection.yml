@@ -4,7 +4,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       # Sets up your GITHUB_WORKSPACE environment variable
       - uses: actions/checkout@v2
