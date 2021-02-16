@@ -4,11 +4,16 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       # Important: This sets up your GITHUB_WORKSPACE environment variable
       - uses: actions/checkout@v2
-      # Retrieving variables from galaxy.yml
+      # Retrieving variables
+      - name: GitHub Environment Variables Action
+        uses: FranzDiebold/github-env-vars-action@v2.1.0
+        run: |
+          echo "CI_SHA_SHORT=$CI_SHA_SHORT" >> $GITHUB_ENV
+      - name: Retrieving variables from galaxy.yml
       - run: |
           ansible --version
           echo "COLLECTION_NAMESPACE=`grep 'namespace:' galaxy.yml | tail -n1 | awk '{ print $2}' | tr -d \"`" >> $GITHUB_ENV
@@ -25,7 +30,7 @@ jobs:
       # Upload generated tar file as an artifact
       - uses: actions/upload-artifact@v2
         with:
-          name: $COLLECTION_NAMESPACE-$COLLECTION_NAME-$VERSION-${{ env.repo_hash }}
+          name: ${{ env.COLLECTION_NAMESPACE }}-${{ env.COLLECTION_NAME }}-${{ env.VERSION }}-${{ env.CI_SHA_SHORT }}
           path: |
             ${{ github.workspace }}/**/*.tar.gz
   
