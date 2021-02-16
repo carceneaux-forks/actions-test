@@ -13,4 +13,4 @@ jobs:
           ansible --version
       - run: |
           python3 -m pip install ansible-lint
-          ansible-lint --version
+          /usr/local/bin/ansible-lint/ansible-lint --version
