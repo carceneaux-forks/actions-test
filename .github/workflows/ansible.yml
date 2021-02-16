@@ -1,0 +1,22 @@
+name: Build & Deploy Ansible Galaxy Collection
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          ansible --version
+          echo "COLLECTION_NAMESPACE=`grep 'namespace:' galaxy.yml | tail -n1 | awk '{ print $2}' | tr -d \"`" >> $GITHUB_ENV
+          echo "COLLECTION_NAME=`grep 'name:' galaxy.yml | tail -n1 | awk '{ print $2}' | tr -d \"`" >> $GITHUB_ENV
+          echo "VERSION=`grep 'version:' galaxy.yml | tail -n1 | awk '{ print $2}' | tr -d \"`" >> $GITHUB_ENV
+      - run: |
+          echo $COLLECTION_NAMESPACE
+          echo $COLLECTION_NAME
+          echo $VERSION     
