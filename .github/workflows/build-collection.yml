@@ -6,11 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Important: This sets up your GITHUB_WORKSPACE environment variable
+      # Sets up your GITHUB_WORKSPACE environment variable
       - uses: actions/checkout@v2
+      - uses: FranzDiebold/github-env-vars-action@v2.1.0
       # Retrieving variables
       - name: GitHub Environment Variables Action
-        uses: FranzDiebold/github-env-vars-action@v2.1.0
         run: |
           echo "CI_SHA_SHORT=$CI_SHA_SHORT" >> $GITHUB_ENV
       - name: Retrieving variables from galaxy.yml
@@ -30,7 +30,7 @@ jobs:
       # Upload generated tar file as an artifact
       - uses: actions/upload-artifact@v2
         with:
-          name: ${{ env.COLLECTION_NAMESPACE }}-${{ env.COLLECTION_NAME }}-${{ env.VERSION }}-${{ env.CI_SHA_SHORT }}
+          name: $CI_SHA_SHORT-${{ env.COLLECTION_NAMESPACE }}-${{ env.COLLECTION_NAME }}-${{ env.VERSION }}-${{ env.CI_SHA_SHORT }}
           path: |
             ${{ github.workspace }}/**/*.tar.gz
   
